@@ -1,0 +1,510 @@
+* {
+    font-family: 'SuisseRegular';
+    box-sizing: border-box;
+}
+
+/*index page*/
+.index-page {
+    width: 100%;
+    height: 600px;
+    background-color: whitesmoke;
+    background-image: url(../image/me.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+
+@media screen and (max-width:768px) {
+    .index-page {
+        background-size: cover;
+        background-position-x: center;
+        display: block;
+        margin: 40px 80px;
+    }
+}
+
+.header table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    margin: 0px 10px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+.header table th {
+    display: block;
+    text-align: left;
+
+}
+
+@media screen and (max-width:768px) {
+
+    .header table thead,
+    .header table tbody {
+        margin-top: 20px;
+    }
+}
+
+.header table td {
+    display: block;
+    text-align: right;
+}
+
+
+.index-page h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #362e2e;
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 120px;
+}
+
+@media screen and (max-width:768px) {
+    .index-page h1 {
+        font-size: 60px;
+    }
+}
+
+.index-page p {
+    margin-left: 100px;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+    text-shadow: #362e2e;
+}
+
+@media screen and (max-width:768px) {
+    .kindheart {
+        margin-left: -20px;
+        margin-top: -30px;
+    }
+}
+
+#btn-explore {
+    margin-left: 100px;
+    font-size: 20px;
+    text-align: left;
+    border: #362e2e solid 2px;
+    border-radius: 50px;
+    padding: 15px 50px;
+    background-color: white;
+
+}
+
+#btn-explore a {
+    text-decoration: none;
+    color: #362e2e;
+}
+
+@media screen and (max-width:768px) {
+    #description {
+        margin-left: 80px;
+    }
+}
+
+/*content page*/
+header h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #362e2e;
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px) {
+    header h2 {
+        margin-left: 50px;
+        font-size: 50px;
+    }
+}
+
+header p {
+    font-size: 18px;
+    background-color: #362e2e;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.container {
+    position: relative;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+    text-align: center;
+}
+
+.demo {
+    opacity: 0.7;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.overlay {
+    margin: 5px 0;
+    color: #362e2e;
+    font-weight: 700;
+
+}
+
+@media screen and (max-width:768px) {
+
+    header p,
+    .row {
+        margin-left: 120px;
+    }
+}
+
+#ebook-btn {
+    border: #362e2e solid 2px;
+    color: #362e2e;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    height: fit-content;
+    padding: 15px 50px;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+#ebook-btn a {
+    text-decoration: none;
+    color: #362e2e;
+}
+
+@media screen and (max-width:768px) {
+    #ebook-btn {
+        margin: 50px 150px;
+    }
+}
+
+#descrip-ebook {
+    color: #362e2e;
+    margin-left: 500px;
+}
+
+@media screen and (max-width:768px) {
+    #descrip-ebook {
+        margin: -10px 150px;
+    }
+}
+
+/*profile page*/
+.profile-page {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.profile-page h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #362e2e;
+    text-align: left;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+}
+
+.card {
+    border: #362e2e solid 2px;
+    border-radius: 30px;
+    display: block;
+    width: 240px;
+    height: 250px;
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        width: 200px;
+        height: 210px;
+        margin-right: 10px;
+        margin: 0 10px;
+    }
+}
+
+.card1 {
+    background-image: url(../image/me.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.card2 {
+    background-image: url(../image/school.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.card3 {
+    background-image: url(../image/talent.jpg);
+    background-size: cover;
+}
+
+.card4 {
+    background-image: url(../image/address.jpg);
+    background-size: cover;
+}
+
+.card h4 {
+    border: #362e2e solid 2px;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 5px 10px;
+    text-align: left;
+    margin-top: 270px;
+}
+
+.card p {
+    margin-left: 15px;
+}
+
+@media screen and (max-width:768px) {
+
+    .card h4+p {
+        margin-right: 10px;
+
+    }
+}
+
+/*education-page*/
+.education-page {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.education-page h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #362e2e;
+    text-align: left;
+}
+
+.me-in-skr {
+    width: 700px;
+    height: 400px;
+    border: #362e2e solid 1px;
+    background-image: url(../image/education-card/Slide2.PNG);
+    background-size: cover;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .me-in-skr {
+        width: 80%;
+        background-size: cover;
+    }
+}
+
+.school-btn {
+    display: block;
+    margin-left: 770px;
+    margin-top: -400px;
+}
+
+.button button {
+    border: #362e2e solid 2px;
+    background-color: white;
+    padding: 15px 50px;
+    width: 400px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+}
+
+
+
+.button button a {
+    text-decoration: none;
+    color: #362e2e;
+}
+
+/*certificate-page*/
+.certificate-page {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.certificate-page h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #362e2e;
+    text-align: left;
+}
+
+.container-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery {
+    width: 300px;
+    height: 200px;
+    border: #362e2e solid 1px;
+    margin-left: 80px;
+}
+
+.gal1 {
+    background-image: url(../image/cer/01certi.png);
+    background-size: cover;
+    /* background: position 5px; */
+    background-position-x: center;
+}
+
+.gal2 {
+    background-image: url(../image/cer/02certi.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.gal3 {
+    background-image: url(../image/cer/03certi.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.gal4 {
+    background-image: url(../image/cer/04certi.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.gal5 {
+    background-image: url(../image/cer/05certi.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.gallery h5 {
+    margin-left: 30px;
+    color: #362e2e;
+}
+
+.fullcer-box {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#fullcer-btn {
+    border: #362e2e solid 2px;
+    background-color: white;
+    border-radius: 12px;
+    width: fit-content;
+    padding: 15px 100px;
+    margin-top: 90px;
+}
+
+#fullcer-btn a {
+    text-decoration: none;
+    color: #362e2e;
+    cursor: grab;
+}
+
+@media screen and (max-width:768px) {
+    .fullcer-box {
+        margin-left: 150px;
+        text-align: center;
+    }
+}
+
+/*university-page*/
+.university-page {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.university-page h2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #362e2e;
+    text-align: left;
+}
+
+.university-page table td img {
+    width: 400px;
+    height: auto;
+    margin-left: 40px;
+}
+
+.university-page table td p {
+    text-align: left;
+    width: 700px;
+    margin-left: 90px;
+    font-size: 24px;
+    color: #362e2e;
+}
+
+/*contact-page*/
+.contact-page {
+    width: 100%;
+    height: 600px;
+    background-color: #362e2e;
+    margin-top: 150px;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-page header {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.801);
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.text-intro h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #a89494;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text-intro p {
+    font-size: 20px;
+    color: #a89494;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.contact-icon {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
